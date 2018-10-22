@@ -1,0 +1,27 @@
+{
+	"resultCode":"0",
+	"message":"ok",
+	"data":{
+		"code":"0",
+		"msg":"ok",
+		"data":{
+			"data":[
+				{
+					"name":"home",
+					"title":"首页",
+					"url":"/home"
+				},
+				{
+					"name":"resume",
+					"title":"个人履历",
+					"url":"/resume/1"
+				},
+				{
+					"name":"modules",
+					"title":"组件库",
+					"url":"/modules"
+				}
+			]
+		}
+	}
+}
