@@ -1,48 +1,39 @@
 <template>
 	<div id="modules">
-		<ul>
+		<ul class="modulesItem">
 			<li>
 				<MuiSwitch value="0"></MuiSwitch>
 			</li>
 			<li>
-				<MuiButton class="type1" message="弹出框按钮"></MuiButton>
+				<MuiOpenDialog buttonMessage="弹出层按钮1" textMessage="文本1" dialogType="2" @confirmClick="muiCallback()"></MuiOpenDialog>
 			</li>
 		</ul>
 	</div>
 </template>
 
 <script>
-import MuiSwitch from './mods/mui-switch.vue';
-import MuiButton from './mods/mui-button.vue';
+import MuiSwitch from './mods/mui-switch.vue'
+import MuiOpenDialog from './mods/mui-openDialog.vue'
 
 export default{
 	components:{
 		MuiSwitch:MuiSwitch,
-		MuiButton:MuiButton
+		MuiOpenDialog:MuiOpenDialog
+	},
+	methods:{
+		muiCallback(){
+			alert('回调成功')
+		}
 	}
 }
 </script>
 
 <style lang="scss" type="text/css">
 #modules{
-	ul{
+	.modulesItem{
 		top:30px;
 		left:300px;
 		position:absolute;
-		li{
-			.type1{
-				width:auto;
-				height:30px;
-				line-height:30px;
-				display:inline-block;
-				text-align:center;
-				cursor:pointer;
-				border-radius:15px;
-				background:#ff0000;
-				color:#ffffff;
-				padding:0 10px;
-			}
-		}
 	}
 }
 </style>
