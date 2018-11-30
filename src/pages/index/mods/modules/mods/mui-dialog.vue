@@ -1,10 +1,10 @@
 <template>
 	<div mui-dialog v-if="isShow" ref="muiDialog">
 		<p>{{message}}</p>
-		<ul v-if="type == 1">
+		<ul v-if="type == 'alert'">
 			<li @click="handleClick()">确认</li>
 		</ul>
-		<ul v-if="type == 2">
+		<ul v-if="type == 'confirm'">
 			<li @click="dialogClose()">取消</li>
 			<li @click="handleClick()">确认</li>
 		</ul>
