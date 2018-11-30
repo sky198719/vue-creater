@@ -7,14 +7,14 @@
 		<textarea v-if="inputType == 'textarea'"></textarea>
 		<div v-if="inputType == 'radio'">
 			<span v-for="(item,index) in formData">
-				<input type="radio" name="item.name" />
-				<label>{{item.labelName}}</label>
+				<input type="radio" :name="item.name" :id="item.id" />
+				<label :for="item.id">{{item.labelName}}</label>
 			</span>
 		</div>
 		<div v-if="inputType == 'checkbox'">
 			<span v-for="(item,index) in formData">
-				<input type="checkbox" />
-				<label>{{item.labelName}}</label>
+				<input type="checkbox" :id="item.id" />
+				<label :for="item.id">{{item.labelName}}</label>
 			</span>
 		</div>
 	</div>

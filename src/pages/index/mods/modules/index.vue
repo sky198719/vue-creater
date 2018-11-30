@@ -43,25 +43,31 @@ export default{
 			radioData:[
 				{
 					labelName:'男',
-					name:1
+					name:'sex',
+					id:1
 				},
 				{
 					labelName:'女',
-					name:1
+					name:'sex',
+					id:2
 				}
 			],
 			checkboxData:[
 				{
-					labelName:'0-100'
+					labelName:'0-100',
+					id:11
 				},
 				{
-					labelName:'101-200'
+					labelName:'101-200',
+					id:12
 				},
 				{
-					labelName:'201-300'
+					labelName:'201-300',
+					id:13
 				},
 				{
-					labelName:'301-400'
+					labelName:'301-400',
+					id:14
 				}
 			]
 		}
